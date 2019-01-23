@@ -1,0 +1,53 @@
+.footer__section
+    width: 100%
+    height: 70px
+    background-color: $orange
+    .footer__wrapper
+        max-width: 900px
+        .footer__newsletter
+            display: flex
+            max-width: 700px
+            height: 70px
+            width: 90%
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            justify-content: space-between
+            align-items: center
+            h3
+                font-size: 22px
+        .footer__newsletter input
+            border: none
+            color: 
+            font-size: 16px
+            outline: none
+            border-bottom: 2px solid black
+            background-color: Transparent
+            height: 34px
+            width: 210px
+        .footer__newsletter input::placeholder
+            color: $gray
+            font-weight: 600
+form
+    width: 210px
+    height: 34px
+
+@media (max-width: 670px)
+    .footer__section
+        height: 240px
+        .footer__newsletter
+            height: 240px
+            width: 100%
+            position: relative
+        .footer__newsletter h3
+            text-align: center
+            width: 100%
+            position: absolute
+            top: 25px
+            left: 50%
+            transform: translateX(-50%)
+        .footer__newsletter input
+            position: absolute
+            top: 150px
+            left: 50%
+            transform: translateX(-50%)

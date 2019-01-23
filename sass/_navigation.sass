@@ -1,0 +1,45 @@
+.header__section
+    height: 150px
+    width: 100%
+    background-color: $orange
+    .header__title
+        height: 75px
+        line-height: 75px
+        text-align: center
+        color: $white
+    .header__nav
+        height: 75px
+        position: absolute
+        width: 70%
+        max-width: 900px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        align-items: center
+        justify-content: space-around
+        a
+            text-decoration: none
+            color: $black
+            font-weight: 600
+            text-align: center
+            position: relative
+            overflow: hidden
+            &::after
+                content: ""
+                position: absolute
+                bottom: -10px
+                left: 50%
+                transform: translateX(-50%)
+                width: 60px
+                border-top: 4px solid $black
+                transition: .3s
+
+@media (min-width: 670px)
+    .header__section
+        .header__nav
+            a   
+                &:hover
+                    color: white
+                &:hover::after
+                    bottom: 50%
+                    color: white
