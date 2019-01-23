@@ -54,6 +54,7 @@ const closeFilters = () => {
 }
 
 
+//Listeners
 
 closeBtn.addEventListener('click', closeFilters);
 germanFood_btn.addEventListener('click', germanFoodSort);
