@@ -43,3 +43,28 @@
                 &:hover::after
                     bottom: 50%
                     color: white
+
+
+.clear__filters
+    z-index: 10
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 145px
+    height: 24px
+    background-color: $grayClear
+    color: $gray
+    position: fixed
+    left: 50%
+    transform: translateX(-50%)
+    top: 150px
+    .clearPlus
+        cursor: pointer
+        transform: rotate(45deg)
+        font-size: 28px
+
+.clear__wrapper
+    display: none
+
+.clear__active
+    display: block
