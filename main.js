@@ -1,7 +1,7 @@
 const fastFood_btn = document.querySelector('.fastFood');
 const polishFood_btn = document.querySelector('.polishFood');
 const germanFood_btn = document.querySelector('.germanFood');
-
+const closeBtn = document.querySelector('.clearPlus');
 const filters = document.querySelector('.clear__wrapper');
 
 const items = document.querySelectorAll('.main__item');
@@ -44,7 +44,6 @@ const germanFoodSort = (e) => {
     filters.classList.add('clear__active')
 }
 
-const closeBtn = document.querySelector('.clearPlus');
 
 const closeFilters = () => {
     itemsArray.forEach(el => {
@@ -53,6 +52,8 @@ const closeFilters = () => {
 
     filters.classList.remove('clear__active')
 }
+
+
 
 closeBtn.addEventListener('click', closeFilters);
 germanFood_btn.addEventListener('click', germanFoodSort);

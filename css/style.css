@@ -90,6 +90,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 150px;
+  opacity: 0.6;
 }
 
 .clear__filters .clearPlus {
@@ -212,6 +213,9 @@
             align-items: flex-start;
     height: 990px;
     max-width: 900px;
+  }
+  .main__content .main__item {
+    cursor: pointer;
   }
   .main__content .main__item:hover {
     border-radius: 50%;
