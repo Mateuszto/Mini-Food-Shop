@@ -12,8 +12,7 @@
 <body>
     <div class="clear__wrapper">
         <div class="clear__filters">
-            <p class="clear">CLEAR FILTERS</p>
-            <p class="clearPlus">+</p>
+            <button class="filterFood" data-food="clear_filters" type="button">CLEAR FILTERS</button>
         </div>
     </div>
     <header class="header__section">
@@ -21,9 +20,9 @@
             <h1>CHEAP FOOD</h1>
         </div>
         <nav class="header__nav">
-            <a href="" class="fastFood">FAST FOOD</a>
-            <a href="" class="polishFood">POLISH FOOD</a>
-            <a href="" class="germanFood">GERMAN FOOD</a>
+            <button class="filterFood" data-food="fast" type="button">FAST FOOD</button>
+            <button class="filterFood" data-food="polish" type="button">POLISH FOOD</button>
+            <button class="filterFood" data-food="german" type="button">GERMAN FOOD</button>
         </nav>
     </header>
 
@@ -77,7 +76,7 @@
     <footer class="footer__section">
         <div class="footer__wrapper">
             <div class="footer__newsletter">
-                <h3>NEWSLETTER - OTRZYMAJ 15% RABATU</h3>
+                <h3>NEWSLETTER - RECEIVE 15% DISCOUNT</h3>
                 <form>
                     <input type="email" name="email" placeholder="E-mail">
                 </form>

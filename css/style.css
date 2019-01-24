@@ -39,16 +39,19 @@
       justify-content: space-around;
 }
 
-.header__section .header__nav a {
+.header__section .header__nav .filterFood {
   text-decoration: none;
   color: #1e1e1e;
   font-weight: 600;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: Transparent;
+  outline: none;
+  border: none;
 }
 
-.header__section .header__nav a::after {
+.header__section .header__nav .filterFood::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -62,10 +65,10 @@
 }
 
 @media (min-width: 670px) {
-  .header__section .header__nav a:hover {
+  .header__section .header__nav .filterFood:hover {
     color: white;
   }
-  .header__section .header__nav a:hover::after {
+  .header__section .header__nav .filterFood:hover::after {
     bottom: 50%;
     color: white;
   }
@@ -85,7 +88,7 @@
   height: 24px;
   background-color: #bfc0c1;
   color: #505256;
-  position: fixed;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -93,19 +96,23 @@
   opacity: 0.6;
 }
 
-.clear__filters .clearPlus {
-  cursor: pointer;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  font-size: 28px;
+.clear__wrapper {
+  display: block;
 }
 
-.clear__wrapper {
-  display: none;
+.clear__wrapper .filterFood {
+  outline: none;
+  border: none;
+  background-color: Transparent;
+  cursor: pointer;
 }
 
 .clear__active {
   display: block;
+}
+
+button {
+  cursor: pointer;
 }
 
 .main__content {
@@ -224,6 +231,7 @@
 }
 
 .footer__section {
+  margin-top: 20px;
   width: 100%;
   height: 70px;
   background-color: #dd9013;
